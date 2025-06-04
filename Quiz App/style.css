@@ -1,0 +1,14 @@
+body{
+    background-color: linear-gradient(#f1ed099f,#ffffff00);
+}
+h1{
+    text-shadow: #00000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button{
+    container-type: "radio";
+    border-radius: 10%;
+    font-size: larger;
+    margin: 20px;
+
+}
