@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Product Lister</title>
+</head>
+<body>
+    <header class="amazon-header">
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <h1 class="logo">Products List</h1>
+            </a>
+            <nav class="header-nav">
+                <input type="text" id="searchBar" class="search-bar" placeholder="Search products">
+                <button class="add-item-btn" onclick="window.location.href='add.html'">Add Item</button>
+            </nav>
+        </div>
+    </header>
+    
+
+    <main class="main-content">
+        <div class="controls">
+            <button class="sort-btn" id="sortAsc">Price: Low to High</button>
+            <button class="sort-btn" id="sortDesc">Price: High to Low</button>
+        </div>
+        
+        <div id="product-container" class="product-grid"></div>
+        <div id="pagination" class="pagination"></div>
+    </main>
+
+    <script src="script1.js"></script>
+</body>
+</html>

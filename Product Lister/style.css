@@ -1,0 +1,228 @@
+:root {
+    --amazon-orange: #FF9900;
+    --amazon-dark: #131921;
+    --amazon-light: #EAEDED;
+}
+
+.amazon-header {
+    background-color: var(--amazon-dark);
+    padding: 0 20px;
+    color: white;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.logo {
+    color: var(--amazon-orange);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 4px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-image {
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #B12704;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.delete-item {
+    background: var(--amazon-orange);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px;
+}
+
+.page-btn {
+    background: var(--amazon-light);
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.active-page {
+    background: var(--amazon-dark);
+    color: white;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.sort-btn{
+    background: linear-gradient(90deg, #f7dfa5 0%, #f0c14b 100%);
+    color: #111;
+    border: 1px solid #a88734;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 8px 10px 8px 0;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+
+.sort-btn:hover {
+    background: linear-gradient(90deg, #f0c14b 0%, #b38b18 100%);
+    color: #222;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.sort-btn:active{
+    background: #e2b33c;
+    color: #111;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0 0 20px;
+    gap: 0;
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;     
+    object-fit: cover;      
+    border-radius: 12px;        
+    margin-bottom: 10px;
+    background: #f4f4f4;  
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04); 
+}
+
+.add-item-btn {
+    background: var(--amazon-orange);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.2s;
+}
+.add-item-btn:hover {
+    background: #f0c14b;
+    color: #222;
+}
+
+.form-container {
+    background: #fff;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.form-container h2 {
+    margin-bottom: 20px;
+    color: var(--amazon-dark);
+}
+.form-container label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.form-container button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.search-bar {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-left: 15px;
+    min-width: 180px;
+    transition: border 0.2s;
+}
+.search-bar:focus {
+    border-color: var(--amazon-orange);
+    outline: none;
+}
+
+#desc-counter {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    font-size: 0.9em;
+    color: #555;
+    background: #fff;
+    padding: 0 3px;
+}
+#desc-error {
+    color: red;
+    font-size: 0.95em;
+    display: none;
+    margin-bottom: 8px;
+}
+

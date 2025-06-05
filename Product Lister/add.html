@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Add Product</title>
+</head>
+<body>
+    <header class="amazon-header">
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <h1 class="logo">Products List</h1>
+            </a>
+            <nav class="header-nav">
+                <a href="#">Account</a>
+                <a href="#">Orders</a>
+                <button class="add-item-btn" onclick="window.location.href='add.html'">Add Item</button>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="form-container">
+            <h2>Add New Product</h2>
+            <form id="addProductForm">
+                <label>
+                    Name:
+                    <input type="text" id="name" required>
+                </label>
+                <label>
+                    Price:
+                    <input type="number" id="price" required min="1">
+                </label>
+                <label style="position:relative; display:block;">
+                    Description:
+                    <textarea id="description" required maxlength="100" style="resize:vertical;"></textarea>
+                    <span id="desc-counter" style="position:absolute; bottom:8px; right:10px; font-size:0.9em; color:#555;">0/10</span>
+                </label>
+                <div id="desc-error" style="color:red; font-size:0.95em; display:none; margin-bottom:8px;">Character limit exceeded</div>                
+                <label>
+                    Image Link:
+                    <input type="url" id="imagelink" required>
+                </label>
+                <button type="submit" class="sort-btn">Add Product</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="add.js"></script>
+</body>
+</html>
